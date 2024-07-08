@@ -1,0 +1,94 @@
+.mainbody {
+    background-color: black;
+    color: white;
+    font: caption;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.stuff {
+    color: white;
+    margin-left: 37vw;
+    display: grid;
+    width: 25vw;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.479);
+}
+
+#input1 {
+    background-color: rgb(6, 6, 6);
+    border: 2px solid gray;
+    height: 50px;
+    margin: 5px;
+    color: white;
+    text-align: left; /* Ensure input starts from the left */
+}
+
+#input1::placeholder {
+    color: gray;
+    text-align: center; /* Center the placeholder text */
+}
+
+#input2 {
+    background-color: black;
+    margin: 5px;
+    border: 2px solid gray;
+    height: 150px;
+    display: flex;
+    align-content: flex-start;
+    color: white;
+    text-align: left; /* Ensure input starts from the left */
+}
+
+#submit {
+    background-color: rgb(68, 68, 197);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    margin-left: 120px;
+}
+
+.file-container {
+    margin-top: 20px ;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    gap: 10px; /* Space between file elements */
+    justify-content: center; /* Center the file elements */
+}
+
+.showfile, .showfile2 {
+    justify-content: center ;
+    width: 25vw;
+    display: grid;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.479);
+}
+
+#read {
+    color: rgb(150, 150, 229);
+}
+
+#filename {
+    display: grid;
+    justify-content: center;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+}
+
+#edit {
+    cursor: pointer;
+    margin-left: 24px;
+    color: rgb(150, 150, 229);
+}
+
+.show {
+    margin-top : 10px; 
+    margin : 5px ; 
+    display: flex;
+}

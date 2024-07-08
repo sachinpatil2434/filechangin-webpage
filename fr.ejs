@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="mainbody">
+    <div class="title">
+        <h1>File Saving Webpage</h1>
+    </div>
+    <form action="/create" method="post"> 
+        <div class="stuff">
+            <input type="text" name="title" id="input1" placeholder="Enter the file name">
+            <textarea name="content" placeholder="You can write content here..." id="input2"></textarea>
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+    
+    <% if (files.length > 0) { %> 
+        <div class="file-container">
+            <% files.forEach(function(val) { %> 
+                <div class="show">
+                    <div class="showfile">
+                        <div class="lcontent">
+                            <div id="filename">
+                                <%= val %>
+                            </div> 
+                            <div class="more">
+                                <span id="readmore">
+                                    <a id="read" href="/files/<%= val %>">Read more</a>
+                                </span>
+                                <a id="edit" href="/rename/<%= val %>">
+                                    Change Filename 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    <% } else { %> 
+        <div class="showfile2">
+            <div class="nofiles">
+                <h5>NO FILES TO SHOW</h5>
+            </div>
+        </div>
+    <% } %>    
+</body>
+</html>

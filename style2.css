@@ -1,0 +1,16 @@
+.mainbody {
+    background-color: black;
+    color: white;
+    font: caption;
+}
+.title {
+    display: flex;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+#tohome{
+    color: rgb(150, 150, 229);
+}
